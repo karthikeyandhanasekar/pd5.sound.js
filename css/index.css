@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: solid;
+    text-align: center;
+    background-color: #ac7a30;
+}
+
+button {
+    background-color: green;
+    padding: 1%;
+    border: none;
+    transition: transform .35s linear;
+    margin-top: 5%;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
