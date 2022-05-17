@@ -1,4 +1,4 @@
-console.log("hello");
+
 let song, fft, button
 const songname = `Brandenburg-Concerto-no.-3-BWV-1048-Complete-Performance.mp3`
 function toogleplay() {
@@ -15,8 +15,8 @@ function setup() {
 
 
     createCanvas(windowWidth * 0.75, windowHeight * 0.75)
-    angleMode(DEGREES)
-    // ellipse(56, 46, 55, 55)
+    // angleMode(DEGREES)
+
     button = createButton('Play/Pause')
     button.mousePressed(toogleplay)
     song.play()
@@ -24,10 +24,10 @@ function setup() {
 }
 
 function draw() {
-    background(0)
+    background("green")
     stroke(255)
 
-    var spectrum = fft.analyze()
+    // var spectrum = fft.analyze()
     var wave = fft.waveform()
     textSize(20);
     textAlign(CENTER)

@@ -5,17 +5,17 @@
 }
 
 body {
-    border: solid;
+    margin: 1%;
     text-align: center;
-    background-color: #ac7a30;
+    background-color: #ac7a30b5;
 }
 
 button {
-    background-color: green;
+    background-color: rgb(17, 171, 219);
     padding: 1%;
     border: none;
     transition: transform .35s linear;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 button:hover {
