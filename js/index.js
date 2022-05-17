@@ -1,18 +1,15 @@
-
 let song, fft, button
 const songname = `Brandenburg-Concerto-no.-3-BWV-1048-Complete-Performance.mp3`
+document.querySelector(".songname").innerHTML = songname
 function toogleplay() {
     song.isPlaying() ? song.pause() : song.play()
 }
 
 function preload() {
-
     song = loadSound(`audio/${songname}`)
 }
 
-
 function setup() {
-
 
     createCanvas(windowWidth * 0.75, windowHeight * 0.75)
     // angleMode(DEGREES)
@@ -26,13 +23,13 @@ function setup() {
 function draw() {
     background("green")
     stroke(255)
-
     // var spectrum = fft.analyze()
     var wave = fft.waveform()
-    textSize(20);
-    textAlign(CENTER)
-    fill("white")
-    text(songname, width * .40, 30)
+
+    // textSize(20);
+    // textAlign(CENTER)
+    // fill("white")
+    // text(songname, width * 0.35, 30)
 
     beginShape();
     for (let i = 0; i <= width; i++) {
@@ -49,3 +46,6 @@ function draw() {
     noFill()
 }
 
+function windowResized() {
+    resizeCanvas(windowWidth * 0.75, windowHeight * 0.75);
+}

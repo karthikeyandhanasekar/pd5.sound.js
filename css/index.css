@@ -8,6 +8,7 @@ body {
     margin: 1%;
     text-align: center;
     background-color: #ac7a30b5;
+    font-size: calc(1.1em + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 button {
